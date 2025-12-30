@@ -20,3 +20,5 @@ Navigation:
 - [Conversion & Packaging](~/site/conversion.md)
 - [Deployment](~/site/deployment.md)
 - [Reproducibility & How to Re-run](~/site/reproducibility.md)
+
+The final packaged model artifact is available on Hugging Face at <https://doi.org/10.57967/hf/7392>.
