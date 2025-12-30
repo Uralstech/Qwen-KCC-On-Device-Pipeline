@@ -1,0 +1,1 @@
+https://uralstech.github.io/Qwen-KCC-On-Device-Pipeline

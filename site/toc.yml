@@ -1,0 +1,18 @@
+pdfFileName: Qwen-KCC On-Device Pipeline.pdf
+pdfTocPage: true
+pdf: true
+pdfPrintBackground: true
+
+items:
+- name: Project Overview
+  href: overview.md
+- name: Training Pipeline
+  href: training.md
+- name: Conversion to TFLite & LiteRT
+  href: conversion.md
+- name: Deployment & Inference
+  href: deployment.md
+- name: Gemma vs Qwen Comparison
+  href: comparison-gemma-qwen.md
+- name: Reproducibility
+  href: reproducibility.md

@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+title: Qwen-KCC On-Device Pipeline
+message: >-
+  If you use this work, please cite the Authorea paper and
+  this repository.
+type: software
+authors:
+  - given-names: Udayshankar
+    family-names: Ravikumar
+    affiliation: URAV ADVANCED LEARNING SYSTEMS PRIVATE LIMITED
+    orcid: 'https://orcid.org/0009-0007-8626-6342'
+identifiers:
+  - type: doi
+    value: 10.22541/au.176659877.79810429/v1
+    description: Reference publication describing the pipeline.
+repository-code: 'https://github.com/Uralstech/Qwen-KCC-On-Device-Pipeline'
+url: 'https://uralstech.github.io/Qwen-KCC-On-Device-Pipeline'
+abstract: >-
+  A reproducible, deployable pipeline for running a
+  farmer-advisory LLM, including conversion of the
+  fine-tuned model to LiteRT-LM for on-edge inference.
+keywords:
+  - AI
+  - LLM
+  - Kisan Call Center
+  - LiteRT
+  - TFLite
+  - LiteRT-LM
+  - Edge
+  - Mobile
+  - Unsloth
+  - Fine-tuning
+  - KCC
+license: Apache-2.0
