@@ -99,3 +99,19 @@ scp -i access_key.pem -r Qwen-2.5-1.5B-KCC_tflite ubuntu@<EC2_IP>:/home/ubuntu/
 ```bash
 scp -i access_key.pem ubuntu@<EC2_IP>:/home/ubuntu/model.litertlm .
 ```
+
+## LiteRT-LM Inference
+
+```bash
+# Choose the executable for your device, this downloads a Linux x64 build of the LiteRT-LM CLI
+wget --output-document lit https://github.com/google-ai-edge/LiteRT-LM/releases/download/v0.8.1/lit.linux_x86_64
+chmod +x lit
+
+# This was tested on an AWS EC2 instance, which required installation of libvulkan (even for CPU inference), which can be installed with:
+# sudo apt install libvulkan1
+
+mkdir /home/ubuntu/.litert-lm/models/
+cp /home/ubuntu/model.litertlm /home/ubuntu/.litert-lm/models/
+
+./lit run model
+```
