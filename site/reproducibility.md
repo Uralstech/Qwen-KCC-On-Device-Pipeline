@@ -19,14 +19,15 @@ cd ai-edge-torch
 # Checkout to latest stable release
 git checkout -b build "v0.7.1"
 
-# Below is an example, install the version of ensurepip
-# which corresponds to the installed Python 3 version
-sudo apt update & sudo apt install python3-ensurepip
+# You may have to run these manually, line-by-line
+# instead of pasting them together.
+sudo apt update
+sudo apt install -y python3-venv
 
-python -m venv --prompt ai-edge-torch venv
+python3 -m venv --prompt ai-edge-torch venv
 source venv/bin/activate
 
-pip install ai-edge-torch
+pip install -r requirements.txt
 ```
 
 ### Transfer artifacts to EC2
@@ -52,7 +53,10 @@ scp -i access_key.pem ubuntu@<EC2_IP>:/home/ubuntu/tflite-_q8_ekv4096.tflite .
 ### Environment Setup
 
 ```bash
-sudo apt update & sudo apt install build-essential clang
+# You may have to run these manually, line-by-line
+# instead of pasting them together.
+sudo apt update
+sudo apt install -y build-essential clang
 
 git clone https://github.com/google-ai-edge/LiteRT-LM.git
 cd LiteRT-LM
